@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  type: 
+  time: 2019-11-06 17:37:30
+  comment: MyText
+
+two:
+  id: 
+  type: 
+  time: 2019-11-06 17:37:30
+  comment: MyText

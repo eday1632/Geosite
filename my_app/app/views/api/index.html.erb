@@ -1,2 +1,16 @@
-<h1>Api#index</h1>
-<p>Find me in app/views/api/index.html.erb</p>
+<h1>Geosite</h1>
+
+<h1>Last 10 Page Loads</h1>
+<table>
+
+  <% @requests.each do |request| %>
+    <tr>
+      <td><%= request.title %></td>
+      <td><%= request.text %></td>
+      <td><%= link_to 'Show', api_path(request) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<h1><%= @date %></h1>
+<h1><%= @cpuinfo %></h1>
