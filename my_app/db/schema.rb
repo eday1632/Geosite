@@ -14,7 +14,6 @@ ActiveRecord::Schema.define(version: 2019_11_07_013730) do
 
   create_table "requests", force: :cascade do |t|
     t.string "type"
-    t.datetime "time"
     t.text "comment", default: "null"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

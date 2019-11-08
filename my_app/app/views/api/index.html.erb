@@ -5,8 +5,7 @@
 
   <% @requests.each do |request| %>
     <tr>
-      <td><%= request.title %></td>
-      <td><%= request.text %></td>
+      <td><%= request.created_at %></td>
       <td><%= link_to 'Show', api_path(request) %></td>
     </tr>
   <% end %>
@@ -14,3 +13,4 @@
 
 <h1><%= @date %></h1>
 <h1><%= @cpuinfo %></h1>
+<h1><%= @test_req %></h1>

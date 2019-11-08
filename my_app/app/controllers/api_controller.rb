@@ -1,10 +1,17 @@
 class ApiController < ApplicationController
     def index
+        curr_req = Request.new()
 
-        @requests = Request.select(:time).order(time: :desc).limit(10)
+        @requests = Request.select(:created_at).order(created_at: :desc).limit(10)
 
         @date = current_date
         @cpuinfo = cpu_info
+
+        @test_req = request.env
+
+
+        # request.method
+        #
     end
 
     def show
