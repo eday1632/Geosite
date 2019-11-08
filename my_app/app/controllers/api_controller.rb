@@ -11,9 +11,6 @@ class ApiController < ApplicationController
 
         @test_req = request.env
 
-
-        # request.method
-        #
     end
 
     def show

@@ -1,8 +1,7 @@
-<h1>Geosite</h1>
 
 <h1>Last 10 Page Loads</h1>
-<table>
 
+<table>
   <% @requests.each do |req| %>
     <tr>
       <td><%= req.created_at %></td>
@@ -10,6 +9,6 @@
   <% end %>
 </table>
 
-<h1><%= @date %></h1>
-<h1><%= @cpuinfo %></h1>
-<h1><%= @test_req %></h1>
+<br>
+<p><%= @date %></p>
+<p><%= @cpuinfo %></p>
