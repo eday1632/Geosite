@@ -1,6 +1,8 @@
 class ApiController < ApplicationController
     def index
         curr_req = Request.new()
+        curr_req.req_type = request.method
+        curr_req.save
 
         @requests = Request.select(:created_at).order(created_at: :desc).limit(10)
 

@@ -3,10 +3,9 @@
 <h1>Last 10 Page Loads</h1>
 <table>
 
-  <% @requests.each do |request| %>
+  <% @requests.each do |req| %>
     <tr>
-      <td><%= request.created_at %></td>
-      <td><%= link_to 'Show', api_path(request) %></td>
+      <td><%= req.created_at %></td>
     </tr>
   <% end %>
 </table>
