@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_08_003626) do
+ActiveRecord::Schema.define(version: 2019_11_07_013730) do
 
   create_table "requests", force: :cascade do |t|
+    t.string "req_type"
     t.text "comment", default: "null"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "req_type"
   end
 
 end
