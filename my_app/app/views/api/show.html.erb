@@ -1,19 +1,27 @@
-<p>
-  <strong>request_id:</strong>
-  <%= @request.id %>
-</p>
+<% if @request %>
+    <p>
+        <strong>request_id:</strong>
+        <%= @request.id %>
+    </p>
 
-<p>
-  <strong>type:</strong>
-  <%= @request.req_type %>
-</p>
+    <p>
+        <strong>type:</strong>
+        <%= @request.req_type %>
+    </p>
 
-<p>
-  <strong>time:</strong>
-  <%= @request.created_at %>
-</p>
+    <p>
+        <strong>time:</strong>
+        <%= @request.created_at %>
+    </p>
 
-<p>
-  <strong>comment:</strong>
-  <%= @request.comment %>
-</p>
+    <p>
+        <strong>comment:</strong>
+        <%= @request.comment %>
+    </p>
+<% else %>
+    <p>
+        <strong>request not found</strong>
+    </p>
+<% end %>
+
+

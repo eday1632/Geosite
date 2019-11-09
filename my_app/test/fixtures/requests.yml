@@ -1,13 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 
-  type: 
-  time: 2019-11-06 17:37:30
-  comment: MyText
+  id:
+  req_type: GET
+  comment:
 
 two:
-  id: 
-  type: 
-  time: 2019-11-06 17:37:30
+  id:
+  req_type: POST
   comment: MyText
