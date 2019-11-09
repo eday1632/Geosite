@@ -43,8 +43,8 @@ class ApiController < ApplicationController
         def cpu_info
             # tbd: tradeoffs between blocking, new thread, new proc
 
-            # %x|cat /proc/cpuinfo|
-            %x|cat /Users/ericday/Documents/junk|
+            %x|cat /proc/cpuinfo|
+            # %x|cat /Users/ericday/Documents/junk|
         end
 
         # copied func from tutorial
